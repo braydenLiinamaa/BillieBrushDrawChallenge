@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Static_UI_App_2.MainPage">
+             x:Class="Static_UI_App_2.CurrentPrompt">
 
     <ScrollView>
         <VerticalStackLayout
@@ -20,24 +20,24 @@
                 TextColor="White"
                 SemanticProperties.HeadingLevel="Level1" />
 
-            <Label
-                Text="Draw something inspired by today's prompt!"
+            <Label x:Name="Prompt"
+                Text="Prompt not generated."
                 Style="{StaticResource SubHeadline}"
                 TextColor="White"
                 SemanticProperties.HeadingLevel="Level2" />
 
-            <Button x:Name="DrawPromptBtn"
-               Text="Draw Prompt"
+            <Button x:Name="MainPageBtn"
+               Text="Main Page"
                BackgroundColor="Crimson"
                TextColor="White"
                FontAttributes="Bold"
                HeightRequest="45"
                WidthRequest="225"
                HorizontalOptions="Center"
-               Clicked="ChangePage" />
+               Clicked="ChangePage"/>
 
-            <Button x:Name="PastPromptsBtn"
-                Text="Past Prompts"
+            <Button x:Name="UploadBtn"
+                Text="Upload Your Art"
                 BackgroundColor="DeepSkyBlue"
                 TextColor="White"
                 FontAttributes="Bold"
@@ -45,8 +45,8 @@
                 WidthRequest="225"
                 HorizontalOptions="Center" />
 
-            <Button x:Name="ProfileBtn"
-                Text="Profile"
+            <Button x:Name="GeneratePromptBtn"
+                Text="Generate New Prompt"
                 BackgroundColor="Goldenrod"
                 TextColor="White"
                 FontAttributes="Bold"
