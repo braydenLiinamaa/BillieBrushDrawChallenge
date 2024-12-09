@@ -6,42 +6,45 @@
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
-            Spacing="25">
+            Spacing="25"
+            BackgroundColor="#0e1111">
             <Image
-                Source="smeargle_icon.png"
+                Source="billiebrush.png"
                 HeightRequest="185"
                 Aspect="AspectFit" />
 
             <Label
-                Text="Smeargle's Daily Challenge"
-                FontAttributes="Bold"
+                Text="Billie Brush's Drawing Challenge"
                 Style="{StaticResource Headline}"
+                FontAttributes="Bold"
+                TextColor="White"
                 SemanticProperties.HeadingLevel="Level1" />
 
             <Label
                 Text="Draw something inspired by today's theme!"
                 Style="{StaticResource SubHeadline}"
+                TextColor="White"
                 SemanticProperties.HeadingLevel="Level2" />
 
             <Button Text="View Today's Theme"
-               BackgroundColor="LightYellow"
-               TextColor="Black"
+               BackgroundColor="Crimson"
+               TextColor="White"
                FontAttributes="Bold"
                HeightRequest="45"
                WidthRequest="225"
                HorizontalOptions="Center" />
             
             <Button Text="Upload Your Art"
-                BackgroundColor="LightGreen"
-                TextColor="Black"
+                BackgroundColor="DeepSkyBlue"
+                TextColor="White"
                 FontAttributes="Bold"
                 HeightRequest="45"
                 WidthRequest="225"
                 HorizontalOptions="Center" />
 
             <Button Text="View Past Themes"
-                BackgroundColor="RosyBrown"
-                TextColor="Black"
+                BackgroundColor="Goldenrod"
+                TextColor="White"
                 FontAttributes="Bold"
                 HeightRequest="45"
                 WidthRequest="225"
