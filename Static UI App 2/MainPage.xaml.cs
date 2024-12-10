@@ -48,6 +48,8 @@
             {
                 if (button == DrawPromptBtn)
                     await Navigation.PushAsync(new CurrentPrompt());
+                else if (button == ProfileBtn)
+                    await Navigation.PushAsync(new ProfilePage());
                 else
                     await Navigation.PushAsync(new MainPage());
             }
