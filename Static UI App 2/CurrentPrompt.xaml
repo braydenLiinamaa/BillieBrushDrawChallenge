@@ -8,51 +8,52 @@
             Padding="30,0"
             Spacing="25"
             BackgroundColor="#0e1111">
-            <Image
-                Source="billiebrush.png"
+            <ImageButton 
+                x:Name="LogoImage" 
+                BackgroundColor="#0e1111"
+                CornerRadius="5"
+                Source="billiebrush.png" 
                 HeightRequest="185"
-                Aspect="AspectFit" />
+                WidthRequest="185"
+                Aspect="AspectFit"
+                Clicked="ChangePage"
+                Pressed="ButtonPressed"
+                Released="ButtonReleased" />
 
-            <Label
-                Text="Billie Brush's Drawing Challenge"
-                Style="{StaticResource Headline}"
-                FontAttributes="Bold"
-                TextColor="White"
-                SemanticProperties.HeadingLevel="Level1" />
-
-            <Label x:Name="Prompt"
+            <Label x:Name="PromptLabel"
                 Text="Prompt not generated."
                 Style="{StaticResource SubHeadline}"
                 TextColor="White"
                 SemanticProperties.HeadingLevel="Level2" />
 
-            <Button x:Name="MainPageBtn"
-               Text="Main Page"
-               BackgroundColor="Crimson"
-               TextColor="White"
-               FontAttributes="Bold"
-               HeightRequest="45"
-               WidthRequest="225"
-               HorizontalOptions="Center"
-               Clicked="ChangePage"/>
-
-            <Button x:Name="UploadBtn"
-                Text="Upload Your Art"
-                BackgroundColor="DeepSkyBlue"
-                TextColor="White"
-                FontAttributes="Bold"
-                HeightRequest="45"
-                WidthRequest="225"
-                HorizontalOptions="Center" />
-
             <Button x:Name="GeneratePromptBtn"
-                Text="Generate New Prompt"
-                BackgroundColor="Goldenrod"
+                Text="Randomize Prompt"
+                BackgroundColor="Crimson"
                 TextColor="White"
                 FontAttributes="Bold"
                 HeightRequest="45"
                 WidthRequest="225"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                Clicked="RandomizePrompt"
+                Pressed="ButtonPressed"
+                Released="ButtonReleased" />
+
+            <ImageButton x:Name="UploadBtn"
+                BackgroundColor="DeepSkyBlue"
+                CornerRadius="5"
+                Source="upload_image_icon.webp" 
+                HeightRequest="200"
+                WidthRequest="200"
+                Aspect="AspectFit"
+                Padding="25"
+                HorizontalOptions="Center"
+                Pressed="ButtonPressed"
+                Released="ButtonReleased" />
+            <Label
+                Text="Click to Upload Image"
+                Style="{StaticResource SubHeadline}"
+                FontSize="12"
+                TextColor="LightSkyBlue" />
         </VerticalStackLayout>
     </ScrollView>
 
