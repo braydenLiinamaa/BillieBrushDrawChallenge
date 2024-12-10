@@ -53,6 +53,7 @@
                 HeightRequest="45"
                 WidthRequest="225"
                 HorizontalOptions="Center"
+                Clicked="ChangePage"
                 Pressed="ButtonPressed"
                 Released="ButtonReleased" />
 

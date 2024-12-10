@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Static_UI_App_2.PastPrompts">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            BackgroundColor="#0e1111">
+            <ImageButton 
+                x:Name="LogoImage" 
+                BackgroundColor="#0e1111"
+                CornerRadius="5"
+                Source="billiebrush.png" 
+                HeightRequest="185"
+                WidthRequest="185"
+                Aspect="AspectFit"
+                Clicked="ChangePage"
+                Pressed="ButtonPressed"
+                Released="ButtonReleased" />
+
+            <FlexLayout Padding="5" Position="Relative" AlignItems="Center" Direction="Row" Wrap="Wrap">
+                <ListView x:Name="myImages">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Label Text="{Binding .}" />
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Image
+                    Source="bobthefloatingeye.png"
+                    HeightRequest="150"
+                    Aspect="AspectFit" />
+                <Image
+                    Source="bobthefloatingeye.png"
+                    HeightRequest="150"
+                    Aspect="AspectFit"/>
+                <Image
+                    Source="bobthefloatingeye.png"
+                    HeightRequest="150"
+                    Aspect="AspectFit"/>
+                <Image
+                    Source="bobthefloatingeye.png"
+                    HeightRequest="150"
+                    Aspect="AspectFit"/>
+                <Image
+                    Source="bobthefloatingeye.png"
+                    HeightRequest="150"
+                    Aspect="AspectFit"/>
+                <Image
+                    Source="bobthefloatingeye.png"
+                    HeightRequest="150"
+                    Aspect="AspectFit"/>
+                <Image
+                    Source="bobthefloatingeye.png"
+                    HeightRequest="150"
+                    Aspect="AspectFit" />
+                <Image
+                    Source="bobthefloatingeye.png"
+                    HeightRequest="150"
+                    Aspect="AspectFit" />
+            </FlexLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

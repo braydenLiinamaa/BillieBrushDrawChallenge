@@ -57,6 +57,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\BobTheFloatingEye.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -66,6 +70,9 @@
 	  <Compile Update="CurrentPrompt.xaml.cs">
 	    <DependentUpon>CurrentPrompt.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="PastPrompts.xaml.cs">
+	    <DependentUpon>PastPrompts.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="ProfilePage.xaml.cs">
 	    <DependentUpon>ProfilePage.xaml</DependentUpon>
 	  </Compile>
@@ -73,6 +80,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="CurrentPrompt.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PastPrompts.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ProfilePage.xaml">
