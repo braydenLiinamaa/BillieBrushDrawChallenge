@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BillieBrushsDailyChallenge.Model
+namespace Static_UI_App_2.Model
 {
     public class ImageFile
     {

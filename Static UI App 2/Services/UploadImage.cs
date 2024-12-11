@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BillieBrushsDailyChallenge.Model;
+using Static_UI_App_2.Model;
 
-namespace BillieBrushsDailyChallenge.Services
+namespace Static_UI_App_2.Services
 {
     public class UploadImage
     {

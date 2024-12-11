@@ -1,4 +1,4 @@
-﻿namespace Static_UI_App_2
+﻿namespace Static_UI_App_2.Views
 {
     public partial class ProfilePage : ContentPage
     {

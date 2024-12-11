@@ -1,6 +1,4 @@
-using BillieBrushsDailyChallenge;
-
-namespace BillieBrushsDailyChallenge.Views;
+namespace Static_UI_App_2.Views;
 
 public partial class ImageUpload : ContentPage
 {
