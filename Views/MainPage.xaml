@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BillieBrushsDailyChallenge.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="billie_brush.png"
+                HeightRequest="185"
+                Aspect="AspectFit" />
+
+            <Label
+                Text="Smeargle's Daily Challenge"
+                FontAttributes="Bold"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Draw something inspired by today's theme!"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2" />
+
+            <Button Text="View Today's Theme"
+               BackgroundColor="LightYellow"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HeightRequest="45"
+               WidthRequest="225"
+               HorizontalOptions="Center" />
+
+            <Button Text="Upload Your Art"
+                BackgroundColor="LightGreen"
+                TextColor="Black"
+                FontAttributes="Bold"
+                HeightRequest="45"
+                WidthRequest="225"
+                HorizontalOptions="Center" 
+                Clicked="btnClicked_Upload"/>
+
+            <Button Text="View Past Themes"
+                BackgroundColor="RosyBrown"
+                TextColor="Black"
+                FontAttributes="Bold"
+                HeightRequest="45"
+                WidthRequest="225"
+                HorizontalOptions="Center"
+                Clicked="btnClicked_Past"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
