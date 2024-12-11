@@ -57,7 +57,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\bird_in_city.png" />
 	  <None Remove="Resources\Images\BobTheFloatingEye.png" />
+	  <None Remove="Resources\Images\cat_epic_battle.png" />
+	  <None Remove="Resources\Images\fish_with_a_gun.png" />
+	  <None Remove="Resources\Images\luigi.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>

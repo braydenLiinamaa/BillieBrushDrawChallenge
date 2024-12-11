@@ -2,9 +2,9 @@
 {
     public partial class CurrentPrompt : ContentPage
     {
-        String[] characters = { "cat", "dog", "bird", "fish", "person"};
-        String[] actions = { "running", "dancing", "doing a backflip", "playing an instrument", "just standing there, menacingly" };
-        String[] locations = { "in the middle of a city", "in a small village", "in the forest", "in a park", "on the street" };
+        String[] characters = { "a cat", "a dog", "a bird", "a fish", "a person", "a rock", "the rock", "pikachu", "Sonic Hedgehog", "Hatsune Miku", "Luigi", "a scarecrow", "a mannequin" };
+        String[] actions = { "running", "dancing", "doing a backflip", "playing an instrument", "just standing there, menacingly", "with a gun", "in the midst of an epic battle", "going super saiyan" };
+        String[] locations = { "in the middle of a city", "in a small village", "in the forest", "in a park", "on the street", "on the moon", "on the roof of a building", "in a cave", "in deep space", "in the backrooms" };
 
         public CurrentPrompt()
         {
@@ -17,8 +17,8 @@
             int x = random.Next(0, characters.Length);
             int y = random.Next(0, actions.Length);
             int z = random.Next(0, locations.Length);
-            return $"Draw a {characters[x]}" 
-                + ((random.Next(3) == 1) ? $" {actions[y]} " : " ") + ((random.Next(3) == 1) ? $"{locations[z]}." : ".");
+            return $"Draw {characters[x]}" 
+                + ((random.Next(3) > 1) ? $" {actions[y]}" : "") + ((random.Next(3) == 1) ? $" {locations[z]}." : ".");
         }
 
         private void RandomizePrompt(object sender, EventArgs e)

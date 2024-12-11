@@ -31,37 +31,25 @@
                     </ListView.ItemTemplate>
                 </ListView>
                 <Image
-                    Source="bobthefloatingeye.png"
+                    Source="person_playing_a_trumpet.jpg"
                     HeightRequest="150"
                     Aspect="AspectFit" />
                 <Image
-                    Source="bobthefloatingeye.png"
+                    Source="cat_epic_battle.png"
                     HeightRequest="150"
                     Aspect="AspectFit"/>
                 <Image
-                    Source="bobthefloatingeye.png"
+                    Source="bird_in_city.png"
                     HeightRequest="150"
                     Aspect="AspectFit"/>
                 <Image
-                    Source="bobthefloatingeye.png"
+                    Source="fish_with_a_gun.png"
                     HeightRequest="150"
                     Aspect="AspectFit"/>
                 <Image
-                    Source="bobthefloatingeye.png"
+                    Source="luigi.jpg"
                     HeightRequest="150"
                     Aspect="AspectFit"/>
-                <Image
-                    Source="bobthefloatingeye.png"
-                    HeightRequest="150"
-                    Aspect="AspectFit"/>
-                <Image
-                    Source="bobthefloatingeye.png"
-                    HeightRequest="150"
-                    Aspect="AspectFit" />
-                <Image
-                    Source="bobthefloatingeye.png"
-                    HeightRequest="150"
-                    Aspect="AspectFit" />
             </FlexLayout>
         </VerticalStackLayout>
     </ScrollView>
