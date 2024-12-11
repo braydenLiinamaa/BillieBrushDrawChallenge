@@ -5,33 +5,54 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25"
-            BackgroundColor="#0e1111">
+        Padding="30,0"
+        Spacing="25"
+        BackgroundColor="#0e1111">
             <ImageButton 
-                x:Name="LogoImage" 
-                BackgroundColor="#0e1111"
-                CornerRadius="5"
-                Source="billiebrush.png" 
-                HeightRequest="185"
-                WidthRequest="185"
-                Aspect="AspectFit"
-                Clicked="ChangePage"
-                Pressed="ButtonPressed"
-                Released="ButtonReleased" />
+            x:Name="LogoImage" 
+            BackgroundColor="#0e1111"
+            CornerRadius="5"
+            Source="user_pfp.png" 
+            HeightRequest="185"
+            WidthRequest="185"
+            Aspect="AspectFit"
+            Clicked="ChangePage"
+            Pressed="ButtonPressed"
+            Released="ButtonReleased" />
 
             <Label
-                Text="User Profile"
-                Style="{StaticResource Headline}"
-                FontAttributes="Bold"
-                TextColor="White"
-                SemanticProperties.HeadingLevel="Level1" />
+            Text="Cool_Username"
+            Style="{StaticResource Headline}"
+            FontAttributes="Bold"
+            TextColor="White"
+            SemanticProperties.HeadingLevel="Level1" />
 
             <Label
-                Text="username"
-                Style="{StaticResource SubHeadline}"
-                TextColor="White"
-                SemanticProperties.HeadingLevel="Level2" />
+            Text="Prompts drawn: 7"
+            Style="{StaticResource SubHeadline}"
+            TextColor="White"
+            SemanticProperties.HeadingLevel="Level2" />
+            <Label
+            Text="Daily streak: 4"
+            Style="{StaticResource SubHeadline}"
+            TextColor="White"
+            SemanticProperties.HeadingLevel="Level2" />
+
+
+            <BoxView HeightRequest="1" Color="White"/>
+
+            <Label
+            Text="Friends:"
+            Style="{StaticResource SubHeadline}"
+            TextColor="White"
+            SemanticProperties.HeadingLevel="Level2" />
+            <Label
+            Text="no friends found :("
+            FontSize="Small"
+            HorizontalTextAlignment="Center"
+            TextColor="White"
+            SemanticProperties.HeadingLevel="Level2" />
+
         </VerticalStackLayout>
     </ScrollView>
 
