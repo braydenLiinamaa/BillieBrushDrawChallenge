@@ -10,7 +10,7 @@
             VerticalOptions="Center">
 
             <Image
-                x:Name="Image_Upload"
+                x:Name="Image_Upload" <!-- Variale for uploaded image -->
                 HeightRequest="400"
                 WidthRequest="400"
                 HorizontalOptions="Center" />

@@ -9,10 +9,7 @@ namespace BillieBrushsDailyChallenge.Services
 {
     public class UploadImage
     {
-        /// <summary>
-        /// Open Media Picker
-        /// </summary>
-        /// <returns></returns>
+        /// open image picker
         public async Task<FileResult> OpenMediaPickerAsync()
         {
             try
@@ -38,11 +35,7 @@ namespace BillieBrushsDailyChallenge.Services
             }
         }
 
-        /// <summary>
-        /// Convert FileResult to Stream
-        /// </summary>
-        /// <param name="fileResult">FileResult</param>
-        /// <returns>Stream</returns>
+        /// convert file result to stream
         public async Task<Stream> FileResultToStream(FileResult fileResult)
         {
             if (fileResult == null)
@@ -51,41 +44,25 @@ namespace BillieBrushsDailyChallenge.Services
             return await fileResult.OpenReadAsync();
         }
 
-        /// <summary>
-        /// Convert byte[] to Stream
-        /// </summary>
-        /// <param name="bytes">byte[]</param>
-        /// <returns>Stream</returns>
+        /// convert byte array to stream
         public Stream ByteArrayToStream(byte[] bytes)
         {
             return new MemoryStream(bytes);
         }
 
-        /// <summary>
-        /// Convert byte[] to string
-        /// </summary>
-        /// <param name="bytes">byte[]</param>
-        /// <returns>string</returns>
+        /// convert byte array to string
         public string ByteBase64ToString(byte[] bytes)
         {
             return Convert.ToBase64String(bytes);
         }
 
-        /// <summary>
-        /// Convert string to byte[]
-        /// </summary>
-        /// <param name="text">string</param>
-        /// <returns>byte[]</returns>
+        /// convert string to byte array
         public byte[] StringToByteBase64(string text)
         {
             return Convert.FromBase64String(text);
         }
 
-        /// <summary>
-        /// Upload a image
-        /// </summary>
-        /// <param name="fileResult">FileResult</param>
-        /// <returns>ImageFile class</returns>
+        /// upload the image
         public async Task<ImageFile> Upload(FileResult fileResult)
         {
             byte[] bytes;
