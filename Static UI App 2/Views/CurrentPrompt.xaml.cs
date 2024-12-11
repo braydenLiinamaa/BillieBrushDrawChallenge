@@ -28,36 +28,32 @@ namespace Static_UI_App_2.Views
         {
             PromptLabel.Text = RandomizePrompt();
         }
-        //private void ButtonPressed(object sender, EventArgs e)
-        //{
-        //    if (sender is ImageButton imgbutton)
-        //    {
-        //        if (imgbutton == LogoImage)
-        //            imgbutton.BackgroundColor = Color.FromArgb("#232b2b");
-        //        else if (imgbutton == UploadBtn)
-        //            imgbutton.BackgroundColor = Colors.LightSkyBlue;
-        //    }
-        //    else if (sender is Button button)
-        //    {
-        //        if (button == GeneratePromptBtn)
-        //            button.BackgroundColor = Colors.DarkSalmon;
-        //    }
-        //}
-        //private void ButtonReleased(object sender, EventArgs e)
-        //{
-        //    if (sender is ImageButton imgbutton)
-        //    {
-        //        if (imgbutton == LogoImage)
-        //            imgbutton.BackgroundColor = Color.FromArgb("#0e1111");
-        //        else if (imgbutton == UploadBtn)
-        //            imgbutton.BackgroundColor = Colors.DeepSkyBlue;
-        //    }
-        //    else if (sender is Button button)
-        //    {
-        //        if (button == GeneratePromptBtn)
-        //            button.BackgroundColor = Colors.Crimson;
-        //    }
-        //}
+        private void ButtonPressed(object sender, EventArgs e)
+        {
+            if (sender is ImageButton imgbutton)
+            {
+                if (imgbutton == LogoImage)
+                    imgbutton.BackgroundColor = Color.FromArgb("#232b2b");
+            }
+            else if (sender is Button button)
+            {
+                if (button == GeneratePromptBtn)
+                    button.BackgroundColor = Colors.DarkSalmon;
+            }
+        }
+        private void ButtonReleased(object sender, EventArgs e)
+        {
+            if (sender is ImageButton imgbutton)
+            {
+                if (imgbutton == LogoImage)
+                    imgbutton.BackgroundColor = Color.FromArgb("#0e1111");
+            }
+            else if (sender is Button button)
+            {
+                if (button == GeneratePromptBtn)
+                    button.BackgroundColor = Colors.Crimson;
+            }
+        }
         private async void ChangePage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());
